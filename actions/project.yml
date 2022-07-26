@@ -7,10 +7,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Setup NodeJS
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: '12'
       - name: Instala dependências
-        run: npm install
+        run: npm i
       - name: Roda ESlint
         run: npx eslint
