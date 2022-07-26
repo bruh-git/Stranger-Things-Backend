@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Setup NodeJS
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
-          node-version: '12'
+          node-version: 12
       - name: Instala dependências
-        run: npm istall
+        run: npm install
       - name: Roda ESlint
         run: npx eslint
