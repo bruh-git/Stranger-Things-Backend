@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: '12'
       - name: Instala dependências
-        run: npm i
+        run: npm install
       - name: Roda ESlint
         run: npx eslint
